@@ -4,7 +4,7 @@ header{
   flex-direction: wrap;
   background-color: #071c2e;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 main{
   display: flex;
