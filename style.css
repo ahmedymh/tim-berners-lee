@@ -1,10 +1,6 @@
-
-header{
-  display: flex;
-  flex-direction: wrap;
-  background-color: #071c2e;
-  align-items: center;
-  justify-content: space-between;
+*{
+  margin: 0;
+  padding: 0;
 }
 main{
   display: flex;
@@ -15,18 +11,74 @@ body{
   flex-direction: column;
 }
 .Subscribe{
-  height: 30%;
-  width: 30%;
+  height: 45%;
+  width: 45%;
   background-color: rgb(138, 2, 2);
   color: white;
-  padding: 8px;
+  padding: 5px 5px;
   border-radius: 8px;
+  margin: 10px;
   border: 1px solid transparent;
   font-size: 1em;
   cursor: pointer;
   font-weight: 500;
   font-family: inherit;
+  text-align: center;
+  text-align: center;
 }
 .dots{
   color: #071c2e;
 }
+.breadcrumbs{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.hiddenmenu{
+  display: none;
+}
+.hiddenleft{
+  display:none;
+}
+header nav{
+  background-color: #071c2e;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .middlepart{
+    position: static;
+    transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+  .middlepart ul{
+    list-style-type: none;
+    align-items: center;
+    gap: 10px;
+  }
+  .rightpart{
+    display:none
+  }
+  .leftpart{
+    display:none
+  }
+  .hiddenleft{
+    display: flex;
+    gap: 10px;
+    align-content: center;
+    align-items: center;
+
+  }
+  .hiddenmenu{
+    display: flex;
+  }
+}
+ 
