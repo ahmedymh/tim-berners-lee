@@ -2,17 +2,24 @@
   margin: 0;
   padding: 0;
 }
+body{
+  width: 100%;
+}
+header{
+  display: flex;
+  flex-direction: row;
+}
 main{
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 body{
   display: flex;
   flex-direction: column;
 }
 .Subscribe{
-  height: 45%;
-  width: 45%;
   background-color: rgb(138, 2, 2);
   color: white;
   padding: 5px 5px;
@@ -33,7 +40,6 @@ body{
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  gap: 10px;
 }
 .hiddenmenu{
   display: none;
@@ -42,6 +48,7 @@ body{
   display:none;
 }
 header nav{
+  width: 100%;
   background-color: #071c2e;
   padding: 10px;
   display: flex;
@@ -49,7 +56,65 @@ header nav{
   justify-content: space-between;
   align-items: center;
 }
+.audio{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
 
+.card img{
+  width: 100%;
+  height: auto;
+}
+.middlepart{
+  display: flex;
+  flex-direction: row;
+}
+.rightpart{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.leftpart{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.action{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border-color: #071c2e;
+  margin: 10px;
+}
+.firstpart{
+  display: flex;
+  flex-direction: column;
+}
+.secondpart{
+  display: flex;
+}
+.thirdpart{
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+}
+.content{
+  background-color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.middlepart img{
+  width: 150px;
+}
 @media (min-width: 768px) {
   .middlepart{
     position: static;
